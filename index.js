@@ -1,4 +1,7 @@
 var loader = document.querySelector("#wrapper");
-setTimeout(function(){
-    loader.style.top = "-100%"
-},2500) 
+setTimeout(function () {
+  loader.style.top = "-100%";
+}, 2800);
+
+
+
