@@ -3,10 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Utkarsh's Portfolio</title>
+    <title>Utkarsh | Frontend Developer & Coder</title>
+    <meta
+      name="description"
+      content="I'm Utkarsh, a Frontend Developer skilled in HTML, CSS, JavaScript, and React. Check out my projects and resume."
+    />
+    <meta
+      name="keywords"
+      content="Utkarsh, Frontend Developer, Portfolio, HTML, CSS, JavaScript, React, Web Developer"
+    />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Utkarsh",
+        "url": "https://utkarsh77portfolio.netlify.app",
+        "sameAs": [
+          "https://github.com/Utkarsh-77",
+          "https://www.linkedin.com/in/yourusername"
+        ],
+        "jobTitle": "Frontend Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelancer / Self"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/x-icon" href="fav.png" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="index.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="fav.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -20,36 +54,65 @@
       ></video>
 
       <div id="wrapper">
-        <h1>Welcome</h1>
-        <h1>To</h1>
-        <h1>Utkarsh's Portfolio</h1>
+        <div class="loader-content">
+          <h1>Welcome</h1>
+          <h1>To</h1>
+          <h1>Utkarsh's Portfolio</h1>
+          <div class="loading-bar">
+            <div class="loading-progress"></div>
+          </div>
+        </div>
       </div>
 
-      <header id="header-item">
-        <div>
-          <a class="brand" href="index.html"
-            >Utkarsh's Portfolio</a>
+      <header class="header">
+        <div class="logo-container">
+          <a href="https://utkarsh77portfolio.netlify.app/" class="brand">
+            <span class="brand-text">Utkarsh's Portfolio</span>
+          </a>
         </div>
-        <div class="ullist">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a target="_blank" href="/About/index.html">About</a></li>
+        <nav>
+          <ul class="nav-links">
             <li>
-              <a target="_blank" href="/Projects/index.html"
-                >Projects</a
+              <a
+                href="https://utkarsh77portfolio.netlify.app/"
+                class="nav-anime active"
               >
+                <i class="fas fa-home"></i> Home
+              </a>
             </li>
-            <li><a href="#">Resume</a></li>
-            <li><a target="_blank" href="/Contact Me/index.html">Contact Me</a></li>
+            <li>
+              <a href="https://about077.netlify.app/" class="nav-anime">
+                <i class="fas fa-user"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="https://myprojects077.netlify.app/" class="nav-anime">
+                <i class="fas fa-code"></i> Projects
+              </a>
+            </li>
+            <li>
+              <a href="UtkarshResume.pdf" target="_blank" class="nav-anime">
+                <i class="fas fa-file-alt"></i> Resume
+              </a>
+            </li>
+            <li>
+              <a href="https://contactme077.netlify.app/" class="nav-anime">
+                <i class="fas fa-envelope"></i> Contact Me
+              </a>
+            </li>
           </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
         </div>
       </header>
+
       <main>
         <div class="hero">
           <div id="left">
             <p>Hi, My name is <span id="uv">Utkarsh</span></p>
-            <p>and i am a Passionate</p>
-            <span id="element"> </span>
+            <p>and I am a Passionate</p>
+            <span id="element"></span>
           </div>
           <div id="right">
             <img
@@ -66,8 +129,10 @@
           </div>
           <div id="full-line"></div>
           <div class="line-div">
-            <div id="line">
-              <img src="html.png" alt="html png" id="png-pic" />
+            <div id="line" class="skill-card">
+              <div class="skill-icon">
+                <img src="html.png" alt="html png" id="png-pic" />
+              </div>
               <h4>HTML</h4>
               <p id="para-png">
                 I independently learned HTML through self-study, utilizing
@@ -75,8 +140,10 @@
               </p>
             </div>
 
-            <div id="line">
-              <img src="css.png" alt="CSS png" id="png-pic" />
+            <div id="line" class="skill-card">
+              <div class="skill-icon">
+                <img src="css.png" alt="CSS png" id="png-pic" />
+              </div>
               <h4>CSS</h4>
               <p id="para-png">
                 Self-taught in CSS through Google, YouTube tutorials, and
@@ -85,8 +152,10 @@
               </p>
             </div>
 
-            <div id="line">
-              <img src="js.svg" alt="Javascript png" id="png-pic" />
+            <div id="line" class="skill-card">
+              <div class="skill-icon">
+                <img src="js.svg" alt="Javascript png" id="png-pic" />
+              </div>
               <h4>JS</h4>
               <p id="para-png">
                 Mastered JavaScript independently through Google, YouTube
@@ -95,8 +164,10 @@
               </p>
             </div>
 
-            <div id="line">
-              <img src="c++.png" alt="C++ ping" id="png-pic" />
+            <div id="line" class="skill-card">
+              <div class="skill-icon">
+                <img src="c++.png" alt="C++ ping" id="png-pic" />
+              </div>
               <h4>C++</h4>
               <p id="para-png">
                 Studied C++ in college and enhanced my coding skills through
@@ -105,8 +176,10 @@
               </p>
             </div>
 
-            <div id="line">
-              <img src="c.png" alt="C png" id="png-pic" />
+            <div id="line" class="skill-card">
+              <div class="skill-icon">
+                <img src="c.png" alt="C png" id="png-pic" />
+              </div>
               <h4 id="c-head">C</h4>
               <p id="para-png">
                 Learned C in college and continuously refined my coding skills
@@ -115,8 +188,10 @@
               </p>
             </div>
 
-            <div id="line">
-              <img src="sol.png" alt="Sql png" id="png-pic" class="sql" />
+            <div id="line" class="skill-card">
+              <div class="skill-icon">
+                <img src="sol.png" alt="Sql png" id="png-pic" class="sql" />
+              </div>
               <h4>SQL</h4>
               <p id="para-png">
                 Independently learned SQL using YouTube tutorials and various
@@ -136,13 +211,25 @@
               <p>I am always trying to do something new.</p>
 
               <div id="social-media">
-                <a href="https://www.instagram.com/utkarsh77__/">
+                <a
+                  href="https://www.instagram.com/utkarsh77__/"
+                  aria-label="Instagram"
+                  class="social-icon"
+                >
                   <img id="sm-img" src="instagram.svg" alt="Instagram image" />
                 </a>
-                <a href="https://www.linkedin.com/in/utkarsh-verma-b71502264/">
+                <a
+                  href="https://www.linkedin.com/in/utkarsh-verma-b71502264/"
+                  aria-label="LinkedIn"
+                  class="social-icon"
+                >
                   <img id="sm-img2" src="linkedin.svg" alt="Linkedin image" />
                 </a>
-                <a href="https://x.com/Utkarsh_07_">
+                <a
+                  href="https://x.com/Utkarsh_07_"
+                  aria-label="Twitter"
+                  class="social-icon"
+                >
                   <img id="sm-img3" src="twitter.svg" alt="Twitter image" />
                 </a>
               </div>
@@ -154,7 +241,9 @@
             <div class="box-list">
               <div id="footer-list-heading">Company</div>
               <ul id="Footer-list">
-                <li><a id="footer-anchor" href="/About/index.html">About</a></li>
+                <li>
+                  <a id="footer-anchor" href="/About/index.html">About</a>
+                </li>
                 <li><a id="footer-anchor" href="#">Press</a></li>
                 <li><a id="footer-anchor" href="#">Job</a></li>
                 <li><a id="footer-anchor" href="#">Blogs</a></li>
@@ -164,7 +253,11 @@
             <div class="box-list">
               <div id="footer-list-heading">Support</div>
               <ul id="Footer-list">
-                <li><a id="footer-anchor" href="/Contact Me/index.html">Contact</a></li>
+                <li>
+                  <a id="footer-anchor" href="/Contact Me/index.html"
+                    >Contact</a
+                  >
+                </li>
                 <li><a id="footer-anchor" href="#">Documentation</a></li>
                 <li><a id="footer-anchor" href="#">Chat</a></li>
                 <li><a id="footer-anchor" href="#">FAQ</a></li>
@@ -183,19 +276,9 @@
         </footer>
         <div id="before-end-line"></div>
         <div id="end-footer">
-          <p>&copy 2024 Utkarsh's Portfolio, All rights are reserved</p>
+          <p>&copy; 2024 Utkarsh's Portfolio, All rights are reserved</p>
         </div>
       </main>
     </div>
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Web developer", "Web designer", "Video Editor"],
-        typeSpeed: 50,
-        backspeed: 25,
-        loop: true,
-      });
-    </script>
   </body>
 </html>
